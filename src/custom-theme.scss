@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+$converter-test-primary: mat.define-palette(mat.$indigo-palette);
+$converter-test-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$converter-test-warn: mat.define-palette(mat.$red-palette);
+$converter-test-theme: mat.define-light-theme((
+  color: (
+    primary: $converter-test-primary,
+    accent: $converter-test-accent,
+    warn: $converter-test-warn,
+  )
+));
+
+@include mat.all-component-themes($converter-test-theme);

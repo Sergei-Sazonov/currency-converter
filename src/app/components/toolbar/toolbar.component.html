@@ -1,0 +1,10 @@
+<mat-toolbar>
+    <h1>{{ 'title' | translate }}</h1>
+        <span *ngFor="let currency of currencies">
+            <p>
+                {{ currency.ccy }}:
+                {{ currency.buy }} /
+                {{ currency.sale }}
+            </p>
+        </span>    
+</mat-toolbar>

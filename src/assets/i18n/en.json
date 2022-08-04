@@ -1,0 +1,5 @@
+{
+    "title": "Currency converter",
+    "currency": "select currency",
+    "value": "value"   
+}

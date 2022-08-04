@@ -1,0 +1,28 @@
+<mat-card>
+    <form [formGroup]="inputForm">
+        <mat-form-field>
+            <mat-label>{{ 'currency' | translate }}</mat-label>
+            <mat-select formControlName="currency">
+                <mat-option value="UAH">UAH</mat-option>
+                <mat-option *ngFor="let currency of currencies" [value]="currency.ccy">{{ currency.ccy }} </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>{{ 'value' | translate }}</mat-label>
+            <input matInput type="number" formControlName="value">
+        </mat-form-field>
+    </form>
+    <form [formGroup]="outputForm">
+        <mat-form-field>
+            <mat-label>{{ 'currency' | translate }}</mat-label>
+            <mat-select formControlName="currency">
+                <mat-option value="UAH">UAH</mat-option>
+                <mat-option *ngFor="let currency of currencies" [value]="currency.ccy">{{ currency.ccy }} </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>{{ 'value' | translate }}</mat-label>
+            <input matInput type="number" formControlName="value">
+        </mat-form-field>
+    </form>
+</mat-card>

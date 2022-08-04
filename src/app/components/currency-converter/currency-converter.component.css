@@ -1,0 +1,15 @@
+:host p {
+  background: aquamarine;
+}
+
+mat-card {
+  margin-left: 33%;
+  position: absolute;
+  margin-top: 100px;
+  width: 500px;
+  height: 150px;
+}
+
+mat-form-field {
+  margin-left: 35px;
+}

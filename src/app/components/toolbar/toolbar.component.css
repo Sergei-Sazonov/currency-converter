@@ -1,0 +1,17 @@
+:host p {
+  margin-left: 70px;  
+  margin-top: 10px;
+}
+
+.mat-toolbar {
+  background-color:rgb(47, 47, 47);
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+}
+
+:host h1 {
+  margin-left: 43%;
+  width: 22%;
+  font-family: cursive;
+}
