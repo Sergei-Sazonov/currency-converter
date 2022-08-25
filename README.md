@@ -10,3 +10,4 @@ This application is created to convert currencies.
 
 Run `npm install` for install all modules.
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`.
+
